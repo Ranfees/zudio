@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift of Fashion - Zudio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-section img {
+      width: 100%;
+      height: 40vh;
+      object-fit: cover;
+      filter: brightness(60%);
+      margin-top: 40px;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .hero-text h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .gift-card-section {
+      padding: 60px 15px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .gift-card-section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .denomination-input {
+      max-width: 500px;
+      margin: 30px auto 0;
+    }
+
+    input.form-control {
+      border-radius: 30px;
+      text-align: center;
+      padding: 12px;
+    }
+  </style>
+</head>
+<body>
+ <%- include('navbar') %>
+  <!-- Hero Banner -->
+  <section class="hero-section">
+    <img src="/New folder/slidebanner_4352_filename.png" alt="Gift of Fashion">
+    <div class="hero-text">
+      <h1>GIFT OF FASHION</h1>
+    </div>
+  </section>
+
+  <!-- Gift Card Section -->
+  <section class="gift-card-section">
+    <div class="container">
+      <div class="mb-4">
+        <img src="/New folder/11288_microsite.png" alt="Zudio Logo">
+        <h4 class="mt-3">Zudio E-Gift Card</h4>
+      </div>
+      <p>
+        Runnin' out of gift ideas? We've got something that's really IN: Zudio E-Gift Cards!
+        Give your loved ones the gift of fashion and fits that are IN.
+        Deliver WHAT’S IN straight to their inbox!
+        <br><br>
+        WHAT’S IN IS IN GIFTIN’! WHAT’S IN IS IN ZUDIO!
+      </p>
+
+      <div class="denomination-input">
+        <label for="amount" class="form-label fw-semibold fs-5">Enter Denomination</label>
+        <input type="number" class="form-control" id="amount" placeholder="Enter amount (₹)">
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

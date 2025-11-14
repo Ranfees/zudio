@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store Locator | Zudio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    .section-header {
+      background-color: #f2f2f2;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .section-header h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .store-card {
+      border: none;
+      border-radius: 0;
+      background-color: #f8f9fa;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .store-card h5 {
+      font-weight: 700;
+    }
+    .store-card .btn {
+      border-radius: 0;
+    }
+    .breadcrumb {
+      background-color: transparent;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <%- include('navbar') %>
+
+  <!-- Header Section -->
+  <section class="section-header">
+    <div class="container">
+      <h2>FIND THE ZUDIO STORE CLOSEST TO YOU</h2>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-4 col-sm-6 mb-2">
+          <select class="form-select">
+            <option selected>Select State</option>
+            <option>Tamil Nadu</option>
+            <option>Telangana</option>
+            <option>Gujarat</option>
+          </select>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-2">
+          <select class="form-select">
+            <option selected>Select City</option>
+            <option>Chennai</option>
+            <option>Hyderabad</option>
+            <option>Ahmedabad</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store List -->
+  <section class="py-5">
+    <div class="container">
+      <h4 class="text-center mb-4 fw-bold">ALL STORES (833)</h4>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="store-card">
+            <h5>ZUDIO - ADILABAD, HYDERABAD</h5>
+            <p><strong>ADDRESS</strong></p>
+            <p>Ramnagar Colony, Adilabad Main Road, Adilabad, Hyderabad - 504001, Telangana</p>
+            <button class="btn btn-dark btn-sm">MORE DETAILS »</button>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="store-card">
+            <h5>ZUDIO - BSR MALL, OMR ROAD</h5>
+            <p><strong>ADDRESS</strong></p>
+            <p>378, Ground And First Floor, Near Starbucks BSR Mall, Rajiv Gandhi Salai Road, Thoraipakkam, Chennai - 600097, Tamil Nadu</p>
+            <button class="btn btn-dark btn-sm">MORE DETAILS »</button>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="store-card">
+            <h5>ZUDIO - MUTHIAH TOWERS, TRICHY</h5>
+            <p><strong>ADDRESS</strong></p>
+            <p>No 1, Muthiah Towers, Royal Road, Cantonment, Tiruchirappalli - 620001, Tamil Nadu</p>
+            <button class="btn btn-dark btn-sm">MORE DETAILS »</button>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="store-card">
+            <h5>ZUDIO - MAYFAIR COMPLEX, CHENNAI</h5>
+            <p><strong>ADDRESS</strong></p>
+            <p>84, Mayfair Complex, Opposite to Varsidhi Clothing, Gopathi Narayanaswami Chetty Road, T Nagar, Chennai - 600017, Tamil Nadu</p>
+            <button class="btn btn-dark btn-sm">MORE DETAILS »</button>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="store-card">
+            <h5>ZUDIO - SAFFRON ARCADE, ANKLESHWAR</h5>
+            <p><strong>ADDRESS</strong></p>
+            <p>AM/11, Saffron Arcade, Valai Road, Near Shraddha Motors, Ankleshwar, Ahmedabad - 393002, Gujarat</p>
+            <button class="btn btn-dark btn-sm">MORE DETAILS »</button>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="store-card">
+            <h5>ZUDIO - KHAJURLA, JALANDHAR</h5>
+            <p><strong>ADDRESS</strong></p>
+            <p>Khasra No 107, Khatoni No 1073, GT Road Village, Near Jeep Gitansh Auto Showroom, Khajurla, Jalandhar - 144411, Punjab</p>
+            <button class="btn btn-dark btn-sm">MORE DETAILS »</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
