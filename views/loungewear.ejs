@@ -19,6 +19,19 @@
         background-color: black;
         height: 90.5vh;
     }
+    .sm-div{
+    height: 100%;
+    display: none;
+  }
+  
+  @media (max-width:600px){
+    .sm-div{
+        display: block;
+    }
+    .big-scrn{
+        display: none;
+    }
+  }
   
 </style>
 <body>
@@ -35,6 +48,35 @@
 
         </div>
     </div>
+        <div id="myCarousel" class="carousel slide carousel-fade  big-scrn" data-bs-ride="carousel">
+          
+             <div class="carousel-indicators d-flex align-content-end justify-content-end">
+                <button  type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active butn" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="butn" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="butn" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" class="butn" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" class="butn" aria-label="Slide 5"></button>
+            </div>
+
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/zudio/r1.webp" class="d-block w-100 h-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/zudio/r3.webp" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/zudio/r2.webp" class="d-block w-100">
+                </div>
+                 <div class="carousel-item">
+                    <img src="/zudio/r4.webp" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/zudio/r5.webp" class="d-block w-100">
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>

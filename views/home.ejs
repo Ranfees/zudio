@@ -20,13 +20,26 @@
         height: 90.5vh;
     }
   
+  .sm-div{
+    height: 100%;
+    display: none;
+  }
+  
+  @media (max-width:600px){
+    .sm-div{
+        display: block;
+    }
+    .big-scrn{
+        display: none;
+    }
+  }
 </style>
 <body>
     <%- include('navbar') %>
     <%- include('side-bar-with-btns') %>
 
     <div class="main-bdy">
-        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="myCarousel" class="carousel slide carousel-fade big-scrn " data-bs-ride="carousel">
           
              <div class="carousel-indicators d-flex align-content-end justify-content-end">
                 <button  type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active butn" aria-current="true" aria-label="Slide 1"></button>
@@ -72,7 +85,7 @@
             </div>
         </div>
 
-          <!-- <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div id="myCarousel" class="carousel slide carousel-fade sm-div" data-bs-ride="carousel">
           
              <div class="carousel-indicators d-flex align-content-end justify-content-end">
                 <button  type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active butn" aria-current="true" aria-label="Slide 1"></button>
@@ -100,7 +113,7 @@
                     <img src="/zudio/r5.webp" class="d-block w-100">
                 </div>
             </div>
-        </div> -->
+        </div>
 
     </div>
 </body>
