@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #screen-warning {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        color: white;
+        z-index: 99999;
+        text-align: center;
+        padding-top: 50px;
+        font-size: 20px;
+
+    }
+</style>
+
+<body>
+    <div id="screen-warning">Screen too small. Please use a wider display. </div>
+</body>
+
+<script>
+    function checkScreenWidth() {
+    const warning = document.getElementById("screen-warning");
+    if (window.innerWidth < 180) {
+        warning.style.display = "block";
+    } else {
+        warning.style.display = "none";
+    }
+}
+
+checkScreenWidth();
+window.addEventListener("resize", checkScreenWidth);
+
+</script>
+
+</html>

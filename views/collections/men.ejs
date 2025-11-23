@@ -9,8 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <style>
-    .butn {
+    body {
+        background-color: black !important;
+    }
 
+    .butn {
         height: 15px !important;
         width: 15px !important;
         border-radius: 50% !important;
@@ -26,6 +29,10 @@
         display: none;
     }
 
+    .responsive-img {
+        height: 90vh;
+    }
+
     @media (max-width:600px) {
         .sm-div {
             display: block;
@@ -38,21 +45,17 @@
 </style>
 
 <body>
-    <%- include('navbar') %>
-        <%- include('side-bar-with-btns') %>
+ <%- include('../navbar') %>
+        <%- include('../side-bar-with-btns') %>
 
             <div class="main-bdy">
                 <div id="myCarousel" class="carousel slide carousel-fade  big-scrn" data-bs-ride="carousel">
 
                     <div class="carousel-indicators d-flex align-content-end justify-content-end">
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active butn"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="butn"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="butn"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" class="butn"
-                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active butn" aria-curren aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="butn" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="butn" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" class="butn" aria-label="Slide 4"></button>
                     </div>
 
 
@@ -73,41 +76,28 @@
 
                 </div>
 
-                <div id="myCarousel" class="carousel slide carousel-fade sm-div" data-bs-ride="carousel">
+                <div id="myCarouselSmall" class="carousel slide carousel-fade sm-div" data-bs-ride="carousel">
 
                     <div class="carousel-indicators d-flex align-content-end justify-content-end">
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active butn"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="butn"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="butn"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" class="butn"
-                            aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" class="butn"
-                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#myCarouselSmall" data-bs-slide-to="0" class="active butn" aria-curren aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarouselSmall" data-bs-slide-to="1" class="butn" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarouselSmall" data-bs-slide-to="2" class="butn" aria-label="Slide 3"></button>
                     </div>
-
 
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/zudio/r1.webp" class="d-block w-100 h-100">
+                            <img src="/men/r1.webp" class="d-block w-100 responsive-img ">
                         </div>
                         <div class="carousel-item">
-                            <img src="/zudio/r3.webp" class="d-block w-100">
+                            <img src="/men/r2.webp" class="d-block w-100 responsive-img">
                         </div>
                         <div class="carousel-item">
-                            <img src="/zudio/r2.webp" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/zudio/r4.webp" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/zudio/r5.webp" class="d-block w-100">
+                            <img src="/men/r3.webp" class="d-block w-100 responsive-img">
                         </div>
                     </div>
                 </div>
             </div>
+            <%- include('../alert') %>
 </body>
 
 </html>
